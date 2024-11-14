@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scythians Roleplay Rules</title>
+    <style>
+        /* Base styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #1a1a1a; 
+            color: #f4f4f4; 
+            margin: 0;
+            padding: 0;
+            background-image: url('banner.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(51, 51, 51, 0.8); 
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #f77f00; 
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-family: 'Roboto', sans-serif;
+        }
+        h2, h3 {
+            color: #f4f4f4; 
+            font-size: 1.5em;
+            margin-top: 30px;
+            border-bottom: 2px solid #f77f00;
+            padding-bottom: 10px;
+        }
+        h3 {
+            font-size: 1.2em;
+            color: #f77f00; 
+            cursor: pointer;
+            transition: color 0.3s ease-in-out;
+        }
+        h3:hover {
+            color: #d66c00; 
+        }
+        p, ul {
+            margin: 10px 0;
+            color: #f4f4f4; 
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .rule-section {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: rgba(68, 68, 68, 0.9); 
+            border-left: 5px solid #f77f00; 
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+        .toggle-content {
+            display: none;
+            padding: 10px;
+            margin-top: 10px;
+            background: rgba(68, 68, 68, 0.9); 
+            border-radius: 4px;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+        .toggle-button {
+            cursor: pointer;
+            color: #f77f00; 
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        .toggle-button:hover {
+            color: #d66c00; 
+        }
+        .btn {
+            background-color: #f77f00; 
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .btn:hover {
+            background-color: #d66c00; 
+        }
+    
+        /* Navigation bar */
+        nav {
+            position: sticky;
+            top: 0;
+            background-color: #111; 
+            padding: 10px;
+            z-index: 100;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+         color: white;
+         text-decoration: none;
+         font-size: 1.2em;
+         padding: 10px 15px;
+         border-radius: 4px;
+         transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+        nav ul li a:hover {
+            background-color: #f77f00;
+        }
+    
+        /* Logo */
+        .logo {
+    max-width: 150px;
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+    display: block;
+}
+
+    
+       
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeOut {
+            from { opacity: 1; }
+            to { opacity: 0; }
+        }
+    
+       
+      
+    </style>
+    
+</head>
+<body>
+
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rules.html">Rules</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="donation.html">Donation</a></li>
+    </ul>
+</nav>
+
+
+<div style="text-align: center; margin-top: 20px;">
+    <img src="logog.png" alt="Scythians Logo" class="logo"> <!-- Replace 'your-logo-url.png' with the actual logo URL -->
+</div>
+
+
+<div class="container" id="home">
+    <h1>Scythians Roleplay</h1>
+    <p><strong>Our Mission:</strong> To create a realistic roleplay experience. Players are encouraged to develop characters freely while adhering to our realism-focused guidelines.</p>
+    <div class="rule-section" id="donation">
+        <h2>Support Us</h2>
+        <p>If you enjoy our content and would like to support us, feel free to make a donation via PayPal:</p>
+        <button onclick="scrollToTop()" id="scrollToTopBtn" aria-label="Scroll to top">↑</button>
+            <a href="https://paypal.me/massyneaazizi" target="_blank" aria-label="Donate via PayPal">
+            <button style="background-color:#0070ba;color:white;padding:10px 20px;border:none;border-radius:5px;font-size:16px;">
+                Donate via PayPal
+            </button>
+        </a>
+    </div>
+
+   
+</div>
+
+
+<button onclick="scrollToTop()" id="scrollToTopBtn">↑</button>
+<style>
+    
+ #scrollToTopBtn {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px;
+    display: none; 
+    background-color: #f77f00; 
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%; 
+    font-size: 1.5em;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0.8; 
+    transition: opacity 0.3s, transform 0.3s;
+  }
+
+
+#scrollToTopBtn:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+  
+
+</style>
+
+
+</div>
+
+
+
+<script>
+function toggleContent(id) {
+    const content = document.getElementById(id);
+    if (content.style.display === "none" || content.style.display === "") {
+        content.style.display = "block";
+        content.style.animation = "fadeIn 0.3s ease-in-out";
+    } else {
+        content.style.display = "none";
+        content.style.animation = "fadeOut 0.3s ease-in-out";
+    }
+}
+</script>
+
+
+
+<script>
+ 
+
+ window.onscroll = function() {
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        scrollToTopBtn.style.display = "block"; 
+    } else {
+        scrollToTopBtn.style.display = "none"; 
+    }
+};
+
+function scrollToTop() {
+    document.body.scrollTop = 0; 
+    document.documentElement.scrollTop = 0; 
+}
+
+</script>
+
+</body>
+</html>
